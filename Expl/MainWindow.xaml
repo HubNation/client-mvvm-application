@@ -1,0 +1,67 @@
+﻿<Window x:Class="Expl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Expl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="392" Width="592">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.8*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+        <ListBox Grid.Column="0" ItemsSource="{Binding Clients}"
+                 SelectedItem="{Binding SelectedClient}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="18" Text="{Binding Path=Fullname}" />
+                        <TextBlock Text="{Binding Path=Age}" />
+                        <TextBlock Text="{Binding Path=RegistrationAddress}" />
+                        <TextBlock Text="{Binding Path=ResidencePermit}" />
+                        <TextBlock Text="{Binding Path=Phone}" />
+                        <TextBlock Text="{Binding Path=Email}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Command="{Binding AddCommand}"></Button>
+            <Button Command="{Binding RemoveCommand}"
+                CommandParameter="{Binding SelectedClient}">-</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" DataContext="{Binding SelectedClient}">
+            <TextBlock Text="Выбранный клиент"  />
+            <TextBlock Text="ФИО" />
+            <TextBox Text="{Binding Fullname}" />
+            <TextBlock Text="Возраст" />
+            <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Адрес регистрации" />
+            <TextBox Text="{Binding RegistrationAddress, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Адрес прописки" />
+            <TextBox Text="{Binding ResidencePermit, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Телефон" />
+            <TextBox Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="Почта" />
+            <TextBox Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+    </Grid>
+</Window>
