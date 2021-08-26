@@ -1,0 +1,15 @@
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\bin\Debug\Expl.exe.config
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\bin\Debug\Expl.exe
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\bin\Debug\Expl.pdb
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.csprojAssemblyReference.cache
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\MainWindow.g.cs
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\App.g.cs
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl_MarkupCompile.cache
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl_MarkupCompile.lref
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\MainWindow.baml
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.g.resources
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.Properties.Resources.resources
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.csproj.GenerateResource.cache
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.csproj.CoreCompileInputs.cache
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.exe
+C:\Users\SempaY\source\repos\ExampleMVVM\Expl\obj\Debug\Expl.pdb
